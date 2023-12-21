@@ -1,0 +1,79 @@
+.N1, .N2, .NN {
+    list-style: none;
+    }
+
+body {
+    font-family: Arial, sans-serif; 
+    counter-reset: counterN1;
+}
+
+.N1>li::before{
+    counter-increment: counterN1;
+    content: counter(counterN1,upper-roman) ". ";
+    }
+
+.N2{
+        counter-reset: counterN2;
+    }
+.N2>li::before{
+        counter-increment: counterN2;
+        content: counter(counterN1,upper-roman) "." counter(counterN2) " ";
+        }
+
+    .NN{
+        counter-reset: counterN3;
+    }
+    .NN>li::before{
+        content: "■ ";
+        }
+  
+
+#left-panel, #right-panel {
+    width: 50%;
+    min-height: 500px;
+    padding: 2.5%;
+    box-sizing: border-box;
+    border: 3px solid #000000;
+    border-radius: 15px;
+
+}
+
+#term-image{
+/* max-height: 200px; */
+padding-left: 20%;
+width: 60%;
+display: block;
+align-self: center;
+}
+
+#term-description {
+    margin-top: 20px;
+}
+
+.active-entry {
+    background-color: #e9e9e9;
+}
+
+.entry {
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin: 5px;
+}
+
+.entry:hover {
+    background-color: #f0f0f0;
+}
+
+button {
+    /* cursor: pointer; */
+    /* padding: 5px 10px; */
+    border: none;
+    background-color: #ffffff !important;
+    /* margin: 0 5px; */
+}
+
+button:hover {
+    background-color: #c8c8c8;
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionnaire des termes informatiques</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div style="text-align: center; padding-top: 10px;"><h2>Dictionnaire des termes informatiques</h2></div>
+    <!--  -->
+    <div class="control" id="control" style="width: 100%;display: flex;">
+<!--  -->
+    <div id="left-panel"></div>
+    <!--  -->
+    <button id="swtch" onclick="switchpositions()" style="width:65px;padding: 10px;">
+        <h2>⊲ ⊳</h2>
+    </button>
+    
+    <!--  -->
+    <div id="right-panel">
+        <title style="display: flex;font-size: 50px;" id="ttl"></title>
+        <hr>
+        <div id="term-description">Cliquez sur un élément de la liste pour afficher les détails.</div>
+        <br>
+        <img id="term-image" src="" alt="image" style="display:none;">
+    </div>
+<!--  -->
+</div>
+<!--  -->
+
+
+<div id="details" style="text-align: center; padding-top: 10px;">
+    <!-- <p>
+        - Nombre de mots:  - Nombre de catégories :  - Nombre moyen de sous-catégories :  - Nombre moyen de mots par catégories : 
+    </p> -->
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
